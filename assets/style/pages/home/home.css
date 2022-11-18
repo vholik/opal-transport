@@ -74,12 +74,16 @@ a {
 }
 
 body {
+  color: #242424;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
 }
 
 .header {
-  margin: 0 100px;
+  position: absolute;
+  padding: 0 100px;
+  top: 0;
+  width: 100%;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -194,6 +198,7 @@ a {
 }
 
 body {
+  color: #242424;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
 }
@@ -202,6 +207,9 @@ body {
   height: 100vh;
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main .scroll-down {
   position: absolute;
@@ -221,9 +229,6 @@ body {
   z-index: -1;
   filter: brightness(0.7);
 }
-.main .hero {
-  margin-top: 180px;
-}
 .main .hero .hero-title {
   color: white;
   font-size: 4rem;
@@ -236,7 +241,7 @@ body {
 
 .about {
   position: relative;
-  padding-top: 15rem;
+  padding-top: 13rem;
 }
 .about .map {
   position: absolute;
@@ -259,14 +264,22 @@ body {
        column-gap: 4rem;
 }
 
-.services {
-  background-color: #18428b;
-  margin-top: 15rem;
-  padding: 6rem;
-}
-.services .servcies-image {
+.services-image {
   width: 100%;
   background-color: grey;
+  height: 600px;
+  transform: translateY(-50%);
+}
+
+.service--container {
+  height: 300px;
+}
+
+.services {
+  background-color: #18428b;
+  margin-top: 13rem;
+  padding: 6rem 0;
+  padding-bottom: 400px;
 }
 .services__title {
   text-align: center;
@@ -297,4 +310,164 @@ body {
 .services .service-item__icon {
   height: 50px;
   width: 50px;
+}
+
+.values {
+  margin-top: 13rem;
+}
+.values .section-line {
+  margin-top: 25px;
+}
+.values__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+.values .values-list {
+  list-style: none;
+}
+.values .values-list__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #18428b;
+  text-transform: uppercase;
+}
+.values .values-list__description {
+  overflow: hidden;
+  max-height: 6rem;
+  padding-bottom: 1.2rem;
+  transition: max-height 0.7s ease, padding 0.7s ease;
+}
+.values .values-list .hide {
+  max-height: 0rem;
+  padding-bottom: 0;
+}
+.values .values-list .rotate-plus {
+  transform: rotate(-45deg);
+}
+.values .values-item {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 1.2rem;
+}
+.values .values-item .top {
+  cursor: pointer;
+  padding-bottom: 1.2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+.values .values-item .top .plus {
+  display: flex;
+  justify-content: end;
+}
+.values .values-item .top .plus img {
+  transition: transform 0.7s ease;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.offers {
+  margin-top: 13rem;
+}
+.offers .right {
+  width: 100%;
+}
+.offers__title {
+  width: 80%;
+  margin-top: 1.5rem;
+}
+.offers__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  margin-top: 1.5rem;
+}
+.offers .offers-list {
+  list-style: none;
+  font-size: 1.1rem;
+}
+.offers .offers-list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  margin-bottom: 0.9rem;
+}
+.offers .offers-list .list-item:hover .list-item__line {
+  opacity: 1;
+}
+.offers .offers-list .list-item__line {
+  transition: opacity 0.2s linear;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  opacity: 0;
+  border-top: 1px solid #18428b;
+  min-width: 2em;
+}
+
+.team {
+  margin-top: 13rem;
+}
+.team .section-title {
+  margin-top: 1.5rem;
+}
+.team__inner {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 4rem;
+}
+.team__inner .human .human-image {
+  height: 27rem;
+}
+.team__inner .human .human-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.team__inner .human__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.team__inner .human__position {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 0.5rem;
+}
+
+.quote {
+  margin-top: 13rem;
+  position: relative;
+}
+.quote__inner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.quote__text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.quote__author {
+  margin-top: 1.5rem;
+  grid-column: 2;
+  text-align: end;
+}
+.quote .quote-bg {
+  position: absolute;
+  background-color: #f2f5f8;
+  width: 50%;
+  right: 0;
+  top: 100px;
+  z-index: -1;
+  height: 400px;
 }/*# sourceMappingURL=home.css.map */

@@ -1,7 +1,11 @@
 @import "./template";
 
 .header {
-  margin: 0 100px;
+  position: absolute;
+  // margin: 0 100px;
+  padding: 0 100px;
+  top: 0;
+  width: 100%;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
