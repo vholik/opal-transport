@@ -1,0 +1,43 @@
+@import "./template";
+
+.header {
+  margin: 0 100px;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .link-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+    gap: 60px;
+    color: white;
+    &__item {
+      transition: opacity 0.2s linear;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    .language-select {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      font-family: $font;
+      cursor: pointer;
+      transition: background 0.2s linear;
+    }
+    .contact-btn {
+      color: white;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

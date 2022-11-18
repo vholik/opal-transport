@@ -1,0 +1,102 @@
+@import "../../shared/header";
+@import "../../shared/template";
+
+.main {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  .scroll-down {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    z-index: -1;
+    filter: brightness(0.7);
+  }
+  .hero {
+    margin-top: 180px;
+    .hero-title {
+      color: white;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+    .btn-arrow {
+      margin-top: 35px;
+      color: white;
+    }
+  }
+}
+
+.about {
+  position: relative;
+  padding-top: 15rem;
+  .map {
+    position: absolute;
+    z-index: -2;
+  }
+  .btn-arrow {
+    color: $primary;
+    margin-top: 35px;
+  }
+  .watermark {
+    position: absolute;
+    right: 0;
+    top: 5rem;
+  }
+  &__inner {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
+}
+
+// Services
+
+.services {
+  background-color: $primary;
+  margin-top: 15rem;
+  padding: 6rem;
+  .servcies-image {
+    width: 100%;
+    background-color: grey;
+  }
+  &__title {
+    text-align: center;
+    color: white;
+  }
+  &__inner {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 5rem;
+  }
+  .service-item {
+    color: white;
+    &__title {
+      border-top: 1px solid $white-30;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &__subtitle {
+      margin-top: 1.5rem;
+    }
+    &__icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
