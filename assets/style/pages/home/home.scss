@@ -41,7 +41,7 @@
 
 .about {
   position: relative;
-  padding-top: 13rem;
+  padding-top: $section-margin;
   .map {
     position: absolute;
     z-index: -2;
@@ -66,9 +66,13 @@
 // Services
 .services-image {
   width: 100%;
-  background-color: grey;
   height: 600px;
   transform: translateY(-50%);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .service--container {
@@ -77,7 +81,7 @@
 
 .services {
   background-color: $primary;
-  margin-top: 13rem;
+  margin-top: $section-margin;
   padding: 6rem 0;
   padding-bottom: 400px;
   &__title {
@@ -113,7 +117,7 @@
 
 //Values
 .values {
-  margin-top: 13rem;
+  margin-top: $section-margin;
   .section-line {
     margin-top: 25px;
   }
@@ -124,6 +128,7 @@
   }
   .values-list {
     list-style: none;
+    border-top: 1px solid $grey-30;
     &__title {
       font-size: 1.5rem;
       font-weight: 500;
@@ -132,7 +137,7 @@
     }
     &__description {
       overflow: hidden;
-      max-height: 6rem;
+      max-height: 250px;
       padding-bottom: 1.2rem;
       transition: max-height 0.7s ease, padding 0.7s ease;
     }
@@ -168,7 +173,7 @@
 }
 
 .offers {
-  margin-top: 13rem;
+  margin-top: $section-margin;
   .right {
     width: 100%;
   }
@@ -206,7 +211,7 @@
 }
 
 .team {
-  margin-top: 13rem;
+  margin-top: $section-margin;
   .section-title {
     margin-top: 1.5rem;
   }
@@ -240,7 +245,7 @@
 }
 
 .quote {
-  margin-top: 13rem;
+  margin-top: $section-margin;
   position: relative;
   &__inner {
     display: grid;
@@ -261,8 +266,8 @@
     background-color: $bg;
     width: 50%;
     right: 0;
-    top: 100px;
+    top: 80px;
     z-index: -1;
-    height: 400px;
+    height: 350px;
   }
 }

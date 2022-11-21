@@ -1,12 +1,13 @@
 @import "./template";
 
 .footer {
-  margin-top: 350px;
+  margin-top: $section-margin;
   position: relative;
   padding: 3.5rem 0;
   a {
     width: fit-content;
   }
+
   .left-bg {
     z-index: -2;
     position: absolute;
@@ -95,6 +96,9 @@
       padding: 1rem 0;
       resize: none;
       margin-bottom: 1rem;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
     .footer-button {
       cursor: pointer;
@@ -107,6 +111,7 @@
       font-size: 1rem;
       font-family: $font;
       border-radius: 2.5rem;
+      font-weight: 500;
       margin-top: 3rem;
       transition: background 0.2s linear;
       &:hover {

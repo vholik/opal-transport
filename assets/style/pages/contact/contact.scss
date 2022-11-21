@@ -1,0 +1,68 @@
+@import "../../shared/footer";
+@import "../../shared/template";
+@import "../../shared/header";
+@import "../../shared/cover";
+
+.header {
+  position: static;
+  .link-list {
+    color: $dark;
+  }
+  .right {
+    .language-select {
+      color: $dark;
+    }
+    .contact-btn {
+      color: $dark;
+      border: 1px solid $dark;
+    }
+  }
+}
+
+.cover {
+  background-image: url("../../../../assets/images/SECTION_IMAGE.png");
+}
+
+.about {
+  margin-top: 6rem;
+  .title {
+    color: $dark;
+  }
+  .subtitle {
+    width: 80%;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+  &__inner {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4rem;
+    align-items: center;
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .contact-list {
+    list-style: none;
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+      line-height: 150%;
+      margin-bottom: 2rem;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+      background-color: $primary;
+      border-radius: 50%;
+    }
+  }
+}

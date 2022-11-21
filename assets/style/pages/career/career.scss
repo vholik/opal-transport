@@ -1,0 +1,51 @@
+@import "../../shared/footer";
+@import "../../shared/template";
+@import "../../shared/header";
+@import "../../shared/cover";
+
+.header {
+  position: static;
+  .link-list {
+    color: $dark;
+  }
+  .right {
+    .language-select {
+      color: $dark;
+    }
+    .contact-btn {
+      color: $dark;
+      border: 1px solid $dark;
+    }
+  }
+}
+
+.cover {
+  background-image: url("../../../../assets/images/SECTION_IMAGE.png");
+}
+
+.about {
+  margin-top: $section-margin;
+  .section-title {
+    margin-top: 1rem;
+    width: 80%;
+  }
+  &__inner {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    .right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .btn-arrow {
+    color: $primary;
+    margin-top: 2rem;
+  }
+}
