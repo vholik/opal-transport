@@ -49,6 +49,10 @@
   &__link {
     margin-bottom: 1.5rem;
     font-weight: 500;
+    transition: cover 0.2s linear;
+    &:hover {
+      color: $dark-hover;
+    }
   }
   &__accent-wrapper {
     margin-top: 3rem;
@@ -56,9 +60,14 @@
   &__accent-link {
     margin-bottom: 1rem;
     font-size: 2rem;
+    transition: cover 0.2s linear;
+    &:hover {
+      color: $dark-hover;
+    }
   }
   .rights-reserved {
-    margin-top: 6rem;
+    position: absolute;
+    bottom: 3.5rem;
   }
   //Right
   .form-title {
@@ -72,6 +81,9 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    textarea {
+      height: 200px;
+    }
     .footer-input {
       font-family: $font;
       font-size: 1rem;

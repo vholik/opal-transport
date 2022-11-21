@@ -338,6 +338,10 @@ body {
 .footer__link {
   margin-bottom: 1.5rem;
   font-weight: 500;
+  transition: cover 0.2s linear;
+}
+.footer__link:hover {
+  color: #585858;
 }
 .footer__accent-wrapper {
   margin-top: 3rem;
@@ -345,9 +349,14 @@ body {
 .footer__accent-link {
   margin-bottom: 1rem;
   font-size: 2rem;
+  transition: cover 0.2s linear;
+}
+.footer__accent-link:hover {
+  color: #585858;
 }
 .footer .rights-reserved {
-  margin-top: 6rem;
+  position: absolute;
+  bottom: 3.5rem;
 }
 .footer .form-title {
   font-weight: 500;
@@ -360,6 +369,9 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+}
+.footer .footer-form textarea {
+  height: 200px;
 }
 .footer .footer-form .footer-input {
   font-family: "Manrope", sans-serif;
