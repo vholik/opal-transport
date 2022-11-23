@@ -371,7 +371,7 @@ body {
   flex-direction: column;
 }
 .footer .footer-form textarea {
-  height: 200px;
+  height: 150px;
 }
 .footer .footer-form .footer-input {
   font-family: "Manrope", sans-serif;
@@ -384,6 +384,15 @@ body {
   padding: 1rem 0;
   resize: none;
   margin-bottom: 1rem;
+}
+.footer .footer-form .footer-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .footer-form .footer-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .footer-form .footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-form .footer-button {
   cursor: pointer;
