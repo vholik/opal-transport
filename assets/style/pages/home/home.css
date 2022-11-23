@@ -69,6 +69,10 @@ a {
   box-sizing: border-box;
 }
 
+.animation-line {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -194,6 +198,10 @@ a {
   box-sizing: border-box;
 }
 
+.animation-line {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -271,6 +279,10 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.animation-line {
+  overflow: hidden;
 }
 
 .container {
@@ -535,6 +547,9 @@ body {
 }
 .values .section-line {
   margin-top: 25px;
+}
+.values .section-title {
+  margin-top: 1.5rem;
 }
 .values__inner {
   display: grid;

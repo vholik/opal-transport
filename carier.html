@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kariera w Opal Transport</title>
     <link rel="stylesheet" href="./assets/style/pages/career/career.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -35,21 +36,39 @@
     <!-- Cover -->
     <div class="cover">
       <div class="container hero">
-        <p class="cover__path">Głowna Strona / Kariera</p>
-        <h1 class="cover__title">Kariera</h1>
+        <p class="cover__path" data-aos="fade-in" data-aos-duration="700">
+          Głowna Strona / Kariera
+        </p>
+        <h1 class="cover__title">
+          <div class="animation-line">
+            <div
+              data-aos="slide-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              Kariera
+            </div>
+          </div>
+        </h1>
       </div>
     </div>
     <!-- About -->
     <section id="about" class="about">
       <div class="container">
-        <p class="section-name">Transport drogowy</p>
-        <h1 class="section-title">
+        <p class="section-name" data-aos="fade-in" data-aos-duration="700">
+          Transport drogowy
+        </p>
+        <h1 class="section-title" data-aos="fade-in" data-aos-duration="700">
           Dwie dekady na lokalnym rynku pracy sprawiają, że jesteśmy pewnym
           wyborem, w trudnych czasach.
         </h1>
         <div class="about__inner">
           <div class="left">
-            <p class="subtitle about__text">
+            <p
+              class="subtitle about__text"
+              data-aos="fade-in"
+              data-aos-duration="700"
+            >
               Oferujemy
               <span class="bold"
                 >atrakcyjne zarobki, uczciwie odzwierciedlające wydajność pracy. </span
@@ -58,18 +77,37 @@
                 firmy.</span
               >
             </p>
-            <p class="subtitle about__text bold">Pracujesz w księgowości?</p>
-            <p class="subtitle about__text">
+            <p
+              class="subtitle about__text bold"
+              data-aos="fade-in"
+              data-aos-duration="700"
+            >
+              Pracujesz w księgowości?
+            </p>
+            <p
+              class="subtitle about__text"
+              data-aos="fade-in"
+              data-aos-duration="700"
+            >
               A może czujesz, że to spedycja jest dla Ciebie? Wolisz prowadzić
               auta, czy pracować bezpośrednio z klientem? Możemy być Twoim
               wyborem na wiele, wiele lat.
             </p>
-            <button class="btn-arrow">
+            <button
+              class="btn-arrow"
+              data-aos="fade-in"
+              data-aos-duration="700"
+            >
               Aplikuj i umów się na niezobowiązującą rozmowę zawodową
               <img src="./assets/images/btn-arrow-blue.svg" alt="Arrow" />
             </button>
           </div>
-          <div class="right">
+          <div
+            class="right"
+            data-aos="fade-in"
+            data-aos-duration="700"
+            data-aos-delay="200"
+          >
             <img src="./assets/images/carier-img.png" alt="Carier" />
           </div>
         </div>
@@ -140,5 +178,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

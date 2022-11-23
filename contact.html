@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="./assets/style/pages/contact/contact.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -35,8 +36,20 @@
     <!-- Cover -->
     <div class="cover">
       <div class="container hero">
-        <p class="cover__path">Głowna Strona / Kontakt</p>
-        <h1 class="cover__title">Kontakt</h1>
+        <p class="cover__path" data-aos="fade-in" data-aos-duration="700">
+          Głowna Strona / Kontakt
+        </p>
+        <h1 class="cover__title">
+          <div class="animation-line">
+            <div
+              data-aos="slide-up"
+              data-aos-duration="700"
+              data-aos-delay="200"
+            >
+              Kontakt
+            </div>
+          </div>
+        </h1>
       </div>
     </div>
     <!-- About -->
@@ -153,5 +166,10 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

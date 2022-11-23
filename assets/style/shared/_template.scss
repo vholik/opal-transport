@@ -10,6 +10,7 @@ $white-hover: rgb(222, 222, 222);
 $dark-hover: #585858;
 $bg: #f2f5f8;
 $section-margin: 13rem;
+$subpage-margin: 10rem;
 $font: "Manrope", sans-serif;
 
 .bold {
@@ -77,6 +78,10 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.animation-line {
+  overflow: hidden;
 }
 
 .container {
