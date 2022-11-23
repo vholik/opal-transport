@@ -44,4 +44,52 @@
       }
     }
   }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    .line {
+      height: 2px;
+      min-width: 33px;
+      background-color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header .link-list {
+    display: none;
+  }
+  .burger {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .right {
+    .language-select {
+      display: none;
+    }
+    .contact-btn {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .logo img {
+    width: 120px;
+  }
 }

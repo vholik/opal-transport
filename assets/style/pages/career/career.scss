@@ -2,6 +2,7 @@
 @import "../../shared/template";
 @import "../../shared/header";
 @import "../../shared/cover";
+@import "../../shared/burger";
 
 .header {
   position: static;
@@ -15,6 +16,11 @@
     .contact-btn {
       color: $dark;
       border: 1px solid $dark;
+    }
+  }
+  .burger {
+    .line {
+      background-color: $dark;
     }
   }
 }

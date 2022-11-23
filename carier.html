@@ -9,6 +9,34 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="burger-menu hide">
+      <img src="./assets/images/cancel.svg" alt="Quit" class="cancel-icon" />
+      <a href="#">
+        <img src="./assets/images/logo-white.svg" alt="Logo" />
+      </a>
+      <ul
+        class="link-list"
+        data-aos="fade-in"
+        data-aos-duration="700"
+        data-aos-delay="200"
+      >
+        <a href="http://www.diagnostyka.wroclaw.pl/www/" target="_blank"
+          ><li class="link-list__item">Nasz warsztat</li></a
+        >
+        <a href="carier.html"><li class="link-list__item">Kariera</li></a>
+        <a href="contact.html"><li class="link-list__item">Kontakt</li></a>
+      </ul>
+      <div class="bottom">
+        <select name="language" id="language-select" class="language-select">
+          <option value="PL">PL</option>
+          <option value="PL">EN</option>
+        </select>
+        <button class="contact-btn btn">
+          <img src="./assets/images/phone.svg" alt="Phone" />
+          +48 458 548 548
+        </button>
+      </div>
+    </div>
     <header class="header">
       <a href="http://127.0.0.1:5500"
         ><div class="logo">
@@ -31,6 +59,11 @@
           <img src="./assets/images/phone-dark.svg" alt="Phone" />
           +48 458 548 548
         </button>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </header>
     <!-- Cover -->
@@ -178,6 +211,7 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/scripts/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/scripts/script.js"></script>
     <script>

@@ -1,6 +1,7 @@
 @import "../../shared/header";
 @import "../../shared/template";
 @import "../../shared/footer";
+@import "../../shared/burger";
 
 .main {
   height: 100vh;
@@ -33,7 +34,7 @@
       font-weight: 500;
     }
     .btn-arrow {
-      margin-top: 35px;
+      margin-top: 1.5rem;
       color: white;
     }
   }
@@ -41,14 +42,15 @@
 
 .about {
   position: relative;
-  padding-top: $section-margin;
+  padding-top: var(--section-margin);
   .map {
     position: absolute;
     z-index: -2;
+    width: 100%;
   }
   .btn-arrow {
     color: $primary;
-    margin-top: 35px;
+    margin-top: 1.5rem;
   }
   .watermark {
     position: absolute;
@@ -56,7 +58,7 @@
     top: 5rem;
   }
   &__inner {
-    margin-top: 15px;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 4rem;
@@ -81,7 +83,7 @@
 
 .services {
   background-color: $primary;
-  margin-top: $section-margin;
+  margin-top: var(--section-margin);
   padding: 6rem 0;
   padding-bottom: 400px;
   &__title {
@@ -117,9 +119,9 @@
 
 //Values
 .values {
-  margin-top: $section-margin;
+  margin-top: var(--section-margin);
   .section-line {
-    margin-top: 25px;
+    margin-top: 1.5rem;
   }
   .section-title {
     margin-top: 1.5rem;
@@ -176,7 +178,7 @@
 }
 
 .offers {
-  margin-top: $section-margin;
+  margin-top: var(--section-margin);
   .right {
     width: 100%;
   }
@@ -214,7 +216,7 @@
 }
 
 .team {
-  margin-top: $section-margin;
+  margin-top: var(--section-margin);
   .section-title {
     margin-top: 1.5rem;
   }
@@ -226,7 +228,7 @@
     row-gap: 4rem;
     .human {
       .human-image {
-        height: 27rem;
+        height: 30vw;
         img {
           object-fit: cover;
           width: 100%;
@@ -248,12 +250,12 @@
 }
 
 .quote {
-  margin-top: $section-margin;
+  margin-top: var(--section-margin);
   position: relative;
   &__inner {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 60px;
+    column-gap: 4rem;
   }
   &__text {
     font-size: 2rem;
@@ -272,5 +274,250 @@
     top: 80px;
     z-index: -1;
     height: 350px;
+  }
+}
+
+// Height
+@media only screen and (max-height: 900px) {
+  .main .scroll-down {
+    left: 5%;
+    bottom: 5%;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .main {
+    video {
+      height: 600px;
+    }
+    height: 600px;
+  }
+}
+
+//Width
+@media only screen and (max-width: 1700px) {
+  .main .scroll-down {
+    left: 5%;
+  }
+  .about {
+    .watermark {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .quote {
+    &__text {
+      font-size: 1.5rem;
+    }
+    .quote-bg {
+      top: 1rem;
+    }
+  }
+
+  .offers__inner {
+    display: block;
+    .offers--image {
+      margin-top: 2.5rem;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .about {
+    &__inner {
+      display: block;
+      .right {
+        margin-top: 1.5rem;
+        width: 50%;
+      }
+    }
+    .watermark {
+      width: 95%;
+    }
+  }
+
+  .main {
+    .hero {
+      .hero-title {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .services .service-item__title {
+    font-size: 1.2rem;
+  }
+
+  .service--container {
+    height: 200px;
+  }
+
+  .services-image {
+    height: 400px;
+  }
+
+  .values__inner {
+    display: block;
+    .right {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .services__inner {
+    margin-top: 2rem;
+  }
+  .about .map {
+    width: 200%;
+  }
+  .quote {
+    &__inner {
+      grid-template-columns: 1fr 15fr;
+    }
+    .quote-icon {
+      width: 2rem;
+    }
+    .quote-bg {
+      top: 3rem;
+    }
+  }
+  .team__inner {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+    .human .human-image {
+      height: 60vw;
+    }
+  }
+  .about {
+    &__inner {
+      display: block;
+      .right {
+        margin-top: 1.5rem;
+        width: 100%;
+      }
+    }
+  }
+  .main {
+    .hero {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .services {
+    padding-bottom: 300px;
+  }
+
+  .values .values-list__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about .map {
+    width: 300%;
+  }
+  .offers .offers-list {
+    font-size: 1rem;
+    .list-item__line {
+      opacity: 1;
+    }
+  }
+  .service--container {
+    height: 150px;
+  }
+
+  .services-image {
+    height: 300px;
+  }
+
+  .services__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about {
+    .watermark {
+      display: none;
+    }
+  }
+  .main {
+    .hero {
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .quote {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+    .quote-bg {
+      top: 4rem;
+    }
+  }
+  .main {
+    .hero {
+      .hero-title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .offers__inner .offers--image {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .services {
+    padding-bottom: 200px;
+  }
+  .service--container {
+    height: 100px;
+  }
+
+  .services-image {
+    height: 200px;
+  }
+  .services__inner {
+    grid-template-columns: 1fr;
+  }
+  .services__title {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .team__inner {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    .human .human-image {
+      height: 120vw;
+    }
+  }
+  .offers__inner .offers--image {
+    height: 200px;
+  }
+  .offers .offers-list .list-item__line {
+    min-width: 1.5rem;
+  }
+  .main {
+    .hero {
+      .hero-title {
+        width: 80%;
+      }
+    }
+  }
+  .values .values-list__title {
+    font-size: 1rem;
   }
 }

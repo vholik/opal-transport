@@ -2,11 +2,17 @@
 @import "../../shared/template";
 @import "../../shared/header";
 @import "../../shared/cover";
+@import "../../shared/burger";
 
 .header {
   position: static;
   .link-list {
     color: $dark;
+  }
+  .burger {
+    .line {
+      background-color: $dark;
+    }
   }
   .right {
     .language-select {

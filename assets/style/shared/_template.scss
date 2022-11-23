@@ -85,12 +85,42 @@ a {
 }
 
 .container {
+  min-width: 1200px;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   color: $dark;
   overflow-x: hidden;
   font-family: $font;
+  --section-margin: 13rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    --section-margin: 8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
 }

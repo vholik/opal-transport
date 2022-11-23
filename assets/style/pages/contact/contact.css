@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 .bold {
   font-weight: 700;
 }
@@ -74,18 +75,45 @@ a {
 }
 
 .container {
+  min-width: 1200px;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   color: #242424;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
+  --section-margin: 13rem;
 }
 
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    --section-margin: 8rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
 .footer {
-  margin-top: 13rem;
+  margin-top: var(--section-margin);
   position: relative;
   padding: 3.5rem 0;
 }
@@ -289,14 +317,272 @@ a {
 }
 
 .container {
+  min-width: 1200px;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   color: #242424;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
+  --section-margin: 13rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    --section-margin: 8rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+}
+
+.section-name {
+  font-size: 1.1rem;
+  color: #242424;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #18428b;
+  font-weight: 500;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #242424;
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  gap: 20px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+.btn-arrow:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  padding: 1em 2em;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 38px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.animation-line {
+  overflow: hidden;
+}
+
+.container {
+  min-width: 1200px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #242424;
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  --section-margin: 13rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    --section-margin: 8rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+.header {
+  position: absolute;
+  padding: 0 100px;
+  top: 0;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .link-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  gap: 60px;
+  color: white;
+}
+.header .link-list__item {
+  transition: opacity 0.2s linear;
+}
+.header .link-list__item:hover {
+  opacity: 0.8;
+}
+.header .right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.header .right .language-select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+.header .right .contact-btn {
+  color: white;
+}
+.header .right .contact-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.header .burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.header .burger .line {
+  height: 2px;
+  min-width: 33px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1600px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header .link-list {
+    display: none;
+  }
+  .burger {
+    display: flex !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header .right .language-select {
+    display: none;
+  }
+  .header .right .contact-btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo img {
+    width: 120px;
+  }
+}
+.cover {
+  padding: 6rem 0;
+  color: white;
+  background-color: rgb(178, 178, 178);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.cover__path {
+  font-weight: 500;
+}
+.cover__title {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.cover .hero {
+  position: relative;
+  z-index: 2;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #242424;
+  z-index: 0;
+  opacity: 0.5;
+  right: 0;
 }
 
 .bold {
@@ -372,100 +658,169 @@ a {
 }
 
 .container {
+  min-width: 1200px;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
   color: #242424;
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
+  --section-margin: 13rem;
 }
 
-.header {
-  position: absolute;
-  padding: 0 100px;
-  top: 0;
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
 }
-.header .link-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-weight: 500;
-  gap: 60px;
-  color: white;
+@media only screen and (max-width: 900px) {
+  body {
+    --section-margin: 8rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
-.header .link-list__item {
-  transition: opacity 0.2s linear;
-}
-.header .link-list__item:hover {
-  opacity: 0.8;
-}
-.header .right {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-.header .right .language-select {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  font-family: "Manrope", sans-serif;
-  cursor: pointer;
-  transition: background 0.2s linear;
-}
-.header .right .contact-btn {
-  color: white;
-}
-.header .right .contact-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.cover {
-  padding: 6rem 0;
-  color: white;
-  background-color: rgb(178, 178, 178);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.cover__path {
-  font-weight: 500;
-}
-.cover__title {
-  font-size: 4rem;
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-.cover .hero {
-  position: relative;
-  z-index: 2;
-}
-.cover::after {
-  content: "";
-  position: absolute;
+.burger-menu {
+  padding: 2rem 5%;
+  position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  background-color: #242424;
-  z-index: 0;
-  opacity: 0.5;
   right: 0;
+  position: fixed;
+  z-index: 10;
+  transition: top 0.7s ease;
+  background-color: #18428b;
+}
+.burger-menu .language-select {
+  background-color: transparent;
+  outline: none;
+  color: white;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.2rem;
+}
+.burger-menu .language-select option {
+  color: black;
+}
+.burger-menu .contact-btn {
+  color: white;
+}
+.burger-menu .bottom {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-menu .cancel-icon {
+  right: 5%;
+  top: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+.burger-menu .link-list {
+  margin-top: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.burger-menu .link-list a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
+.hide {
+  top: -100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer__inner .right {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer .rights-reserved {
+    position: static;
+    margin-top: 6rem;
+  }
+  .footer__accent-link {
+    font-size: 1.5rem;
+  }
+  .left-bg,
+.right-bg {
+    display: none;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__inner .right {
+    position: relative;
+    padding-left: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .footer__inner .right::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: -100%;
+    bottom: 0;
+    background-color: #18428b;
+  }
+  .footer__inner .left {
+    position: relative;
+    padding-left: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .footer__inner .left::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: -100%;
+    bottom: 0;
+    background-color: #f2f5f8;
+  }
+}
 .header {
   position: static;
 }
 .header .link-list {
   color: #242424;
+}
+.header .burger .line {
+  background-color: #242424;
 }
 .header .right .language-select {
   color: #242424;

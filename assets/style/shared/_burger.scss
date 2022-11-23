@@ -1,0 +1,117 @@
+@import "./template";
+
+.burger-menu {
+  padding: 2rem 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  transition: top 0.7s ease;
+  background-color: $primary;
+  .language-select {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    font-family: $font;
+    font-size: 1.2rem;
+    option {
+      color: black;
+    }
+  }
+  .contact-btn {
+    color: white;
+  }
+  .bottom {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cancel-icon {
+    right: 5%;
+    top: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+  }
+  .link-list {
+    margin-top: 1.5rem;
+    width: fit-content;
+    a {
+      width: fit-content;
+    }
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.hide {
+  top: -100%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer__inner .right {
+    padding-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding-bottom: 0;
+    .rights-reserved {
+      position: static;
+      margin-top: 6rem;
+    }
+    &__accent-link {
+      font-size: 1.5rem;
+    }
+  }
+  .left-bg,
+  .right-bg {
+    display: none;
+  }
+  .footer__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    .right {
+      position: relative;
+      padding-left: 0;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        right: -100%;
+        bottom: 0;
+        background-color: $primary;
+      }
+    }
+    .left {
+      position: relative;
+      padding-left: 0;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        right: -100%;
+        bottom: 0;
+        background-color: $bg;
+      }
+    }
+  }
+}
