@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kariera w Opal Transport</title>
+    <title>Opal Transport - Kariera</title>
     <link rel="stylesheet" href="./assets/style/pages/career/career.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   </head>
   <body>
     <div class="burger-menu hide">
@@ -154,9 +155,7 @@
         <div class="footer__inner">
           <div class="left">
             <div class="logo">
-              <a href="#">
-                <img src="./assets/images/logo-color.svg" alt="Logo" />
-              </a>
+              <img src="./assets/images/logo-color.svg" alt="Logo" />
             </div>
             <ul class="footer__links">
               <a href="#"><li class="footer__link">Nasz warsztat</li></a>
@@ -180,38 +179,50 @@
           <div class="right">
             <h2 class="form-title">Formularz</h2>
             <p class="form-subtitle">Zadzwonimy jak najszybczej</p>
-            <form class="footer-form">
+            <form class="footer-form" id="contact-form">
+              <input
+                type="text"
+                placeholder="Numer telefonu"
+                class="footer-input"
+                id="phone-input"
+                minlength="9"
+                maxlength="256"
+                required
+              />
               <input
                 type="text"
                 placeholder="Imię i nazwisko"
                 class="footer-input"
+                id="fullName-input"
+                maxlength="256"
               />
               <input
                 type="text"
                 placeholder="Nazwa firmy"
                 class="footer-input"
-              />
-              <input
-                type="text"
-                placeholder="Numer telefonu"
-                class="footer-input"
+                id="company-input"
+                maxlength="256"
               />
               <textarea
                 name="message"
-                id="footer-message"
                 placeholder="Wiadomość"
                 cols="30"
                 rows="10"
                 class="footer-input"
+                id="message-input"
+                maxlength="256"
               ></textarea>
 
-              <button class="footer-button" type="submit">Wyślij</button>
+              <button class="footer-button" type="submit" id="form-btn">
+                Wyślij
+              </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/form.js"></script>
+    <script src="./assets/scripts/burger.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/scripts/script.js"></script>
     <script>

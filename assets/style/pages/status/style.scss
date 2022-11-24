@@ -1,0 +1,78 @@
+@import "../../shared/header";
+@import "../../shared/burger";
+@import "../../shared/template";
+
+.header {
+  position: static;
+  .link-list {
+    color: $dark;
+  }
+  .burger {
+    .line {
+      background-color: $dark;
+    }
+  }
+  .right {
+    .language-select {
+      color: $dark;
+    }
+    .contact-btn {
+      color: $dark;
+      border: 1px solid $dark;
+    }
+  }
+}
+
+.hero {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .hero-img {
+    width: 10rem;
+    margin: 2rem 0;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .to-home {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    .hero-img {
+      width: 5rem;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero {
+    .hero-img {
+      width: 4rem;
+    }
+    .hero-title {
+      font-size: 2rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+}

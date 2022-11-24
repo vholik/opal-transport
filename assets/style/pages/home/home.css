@@ -1011,7 +1011,7 @@ body {
   row-gap: 4rem;
 }
 .team__inner .human .human-image {
-  height: 30vw;
+  height: 20vw;
 }
 .team__inner .human .human-image img {
   -o-object-fit: cover;
