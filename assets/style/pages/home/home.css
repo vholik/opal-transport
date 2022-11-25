@@ -82,6 +82,7 @@ a {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -280,6 +281,7 @@ a {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -390,6 +392,7 @@ a {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -632,6 +635,7 @@ a {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -780,6 +784,10 @@ body {
     background-color: #f2f5f8;
   }
 }
+.header #language-select option {
+  color: #242424;
+}
+
 .main {
   height: 100vh;
   position: relative;
@@ -812,6 +820,9 @@ body {
   font-weight: 500;
 }
 .main .hero .btn-arrow {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 1.5rem;
   color: white;
 }
