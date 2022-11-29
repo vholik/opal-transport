@@ -37,6 +37,9 @@ a {
   font-family: "Manrope", sans-serif;
   transition: opacity 0.2s linear;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .btn-arrow:hover {
   opacity: 0.7;
@@ -236,6 +239,9 @@ a {
   font-family: "Manrope", sans-serif;
   transition: opacity 0.2s linear;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .btn-arrow:hover {
   opacity: 0.7;
@@ -465,6 +471,9 @@ a {
   font-family: "Manrope", sans-serif;
   transition: opacity 0.2s linear;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .btn-arrow:hover {
   opacity: 0.7;
