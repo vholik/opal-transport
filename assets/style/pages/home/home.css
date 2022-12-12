@@ -6,6 +6,19 @@
   font-weight: 700;
 }
 
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
+}
+
 a {
   color: inherit;
   font-family: "Manrope", sans-serif;
@@ -208,6 +221,19 @@ body {
   font-weight: 700;
 }
 
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
+}
+
 a {
   color: inherit;
   font-family: "Manrope", sans-serif;
@@ -320,6 +346,19 @@ body {
 }
 .bold {
   font-weight: 700;
+}
+
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
 }
 
 a {
@@ -566,6 +605,19 @@ body {
 
 .bold {
   font-weight: 700;
+}
+
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
 }
 
 a {
@@ -945,7 +997,7 @@ body {
 }
 .values .values-list__description {
   overflow: hidden;
-  max-height: 250px;
+  max-height: 450px;
   padding-bottom: 1.2rem;
   transition: max-height 0.7s ease, padding 0.7s ease;
 }
@@ -1022,19 +1074,23 @@ body {
 .team {
   margin-top: var(--section-margin);
 }
-.team .section-title {
-  margin-top: 1.5rem;
+.team .carousel-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.team .section-name {
+  margin-top: 1rem;
 }
 .team__inner {
-  margin-top: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-  row-gap: 4rem;
+  margin-top: 2.5rem;
+}
+.team__inner .human {
+  margin-right: 20px;
 }
 .team__inner .human .human-image {
   height: 20vw;
+  min-height: 300px;
 }
 .team__inner .human .human-image img {
   -o-object-fit: cover;
@@ -1171,7 +1227,7 @@ body {
          column-gap: 5vw;
   }
   .team__inner .human .human-image {
-    height: 60vw;
+    height: 30rem;
   }
   .about__inner {
     display: block;
@@ -1259,7 +1315,7 @@ body {
          column-gap: 0;
   }
   .team__inner .human .human-image {
-    height: 120vw;
+    height: 25rem;
   }
   .offers__inner .offers--image {
     height: 200px;

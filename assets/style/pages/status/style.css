@@ -5,6 +5,19 @@
   font-weight: 700;
 }
 
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
+}
+
 a {
   color: inherit;
   font-family: "Manrope", sans-serif;
@@ -205,6 +218,19 @@ body {
 }
 .bold {
   font-weight: 700;
+}
+
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
 }
 
 a {
@@ -437,6 +463,19 @@ body {
 }
 .bold {
   font-weight: 700;
+}
+
+.carousel-btn {
+  background-color: #18428b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn img {
+  width: 1rem;
 }
 
 a {

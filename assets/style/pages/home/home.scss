@@ -152,7 +152,7 @@
     }
     &__description {
       overflow: hidden;
-      max-height: 250px;
+      max-height: 450px;
       padding-bottom: 1.2rem;
       transition: max-height 0.7s ease, padding 0.7s ease;
     }
@@ -227,18 +227,21 @@
 
 .team {
   margin-top: var(--section-margin);
-  .section-title {
-    margin-top: 1.5rem;
+  .carousel-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .section-name {
+    margin-top: 1rem;
   }
   &__inner {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 4rem;
-    row-gap: 4rem;
+    margin-top: 2.5rem;
     .human {
+      margin-right: 20px;
       .human-image {
         height: 20vw;
+        min-height: 300px;
         img {
           object-fit: cover;
           width: 100%;
@@ -397,7 +400,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5vw;
     .human .human-image {
-      height: 60vw;
+      height: 30rem;
     }
   }
   .about {
@@ -511,7 +514,7 @@
     grid-template-columns: 1fr;
     column-gap: 0;
     .human .human-image {
-      height: 120vw;
+      height: 25rem;
     }
   }
   .offers__inner .offers--image {
