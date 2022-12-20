@@ -1,4 +1,9 @@
 const valuesItems = document.querySelectorAll(".values-item");
+const uniaLogo = document.querySelector(".unia-logo");
+
+uniaLogo.addEventListener("click", () => {
+  window.open("http://uniatransportu.pl", "_blank").focus();
+});
 
 [...valuesItems].forEach((item, index) => {
   item.addEventListener("click", () => {
